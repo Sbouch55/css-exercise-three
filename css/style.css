@@ -1,50 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 
@@ -54,19 +9,9 @@ body {
   font-size: 10px;
 }
 
-div {
-	background-color: #EFEFEF;
-	width: 420px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 	font-weight: bold;
-  color:#000000;
 }
 h3 {
   font-size: 1em;
@@ -83,23 +28,47 @@ nav {
   padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
+	background-color: #000000;
+	height: 50px;
 }
-
-.arrow {
-  text-align: right;
-}
-
-.arrow-left {
-	background-color: black;
-}
-
-.location :hover { background-color:#7F7E83; } /* mouse over */
 
 .restaurant-list {
-  border: 1px solid #fff;
-	border-color: black;
-  float: left;
-  margin: 3%;
-  padding: 0%;
-  width: 420px;
+	background-color: #d3d3d3;
+  /* border: 1px solid #fff;
+  float: left; */
+	width: 100%;
+  margin-top: 50px;
+	display: inline-block;
 }
+
+.location{
+	background-color: #d3d3d3;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	padding-left: 5%;
+	padding-top: 0%;
+	border-bottom: 1px solid #000000;
+	margin-top: 0%;
+	line-height: 1.3;
+}
+
+
+
+.arrow {
+	float: right;
+	 padding-top: 7%;
+	 padding-bottom: 5%;
+	 width: 5%;
+	}
+
+.content {
+		width: 95%;
+		float: left;
+		padding-top: 5%;
+		padding-bottom: 5%
+	}
+
+.location:hover {
+	background-color:#7F7E83;
+	} /* mouse over */
